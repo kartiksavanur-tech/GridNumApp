@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     public void highlightEvenNum(){
         for (int i =0; i<gridLayout.getChildCount(); i++){
             Button btn = (Button) gridLayout.getChildAt(i);
-            btn.setBackgroundColor(Color.GRAY);
+            btn.setBackgroundColor(Color.LTGRAY);
             int number = Integer.parseInt(btn.getText().toString());
             if (number % 2 == 0){
                 btn.setBackgroundColor(Color.GREEN);
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
     public void highlightOddNum(){
         for (int i =0; i<gridLayout.getChildCount(); i++){
             Button btn = (Button) gridLayout.getChildAt(i);
-            btn.setBackgroundColor(Color.GRAY);
+            btn.setBackgroundColor(Color.LTGRAY);
             int number = Integer.parseInt(btn.getText().toString());
             if (number % 2 != 0){
                 btn.setBackgroundColor(Color.RED);
@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
     private void highlightFibonacciNum() {
         for (int i = 0; i < gridLayout.getChildCount(); i++) {
             Button btn = (Button) gridLayout.getChildAt(i);
-            btn.setBackgroundColor(Color.GRAY);
+            btn.setBackgroundColor(Color.LTGRAY);
             int number = Integer.parseInt(btn.getText().toString());
             if (isFibonacci(number)) {
                 btn.setBackgroundColor(Color.BLUE);
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
     private void highlightPrimeNum() {
         for (int i = 0; i < gridLayout.getChildCount(); i++) {
             Button btn = (Button) gridLayout.getChildAt(i);
-            btn.setBackgroundColor(Color.GRAY);
+            btn.setBackgroundColor(Color.LTGRAY);
             int number = Integer.parseInt(btn.getText().toString());
             if (isPrime(number)) {
                 btn.setBackgroundColor(Color.MAGENTA);
