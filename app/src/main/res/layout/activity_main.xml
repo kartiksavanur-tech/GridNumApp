@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/evenbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:backgroundTint="#06A60D"
+                android:includeFontPadding="false"
+                android:text="Even"
+                android:textColor="@color/black"
+                android:textSize="8dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/oddbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:backgroundTint="#970202"
+                android:text="Odd"/>
+            <Button
+                android:id="@+id/prime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:backgroundTint="#ff00ff"
+                android:text="Prime"/>
+            <Button
+                android:id="@+id/fibinoccci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:textSize="8dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:backgroundTint="#001484"
+                android:text="Fibinocci"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="4"
+            android:rowCount="25"/>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>
