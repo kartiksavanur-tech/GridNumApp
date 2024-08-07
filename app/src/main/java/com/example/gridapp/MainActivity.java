@@ -51,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
         for (int i=0; i<100; i++){
             Button btn = new Button(this);
             btn.setText(String.valueOf(numbers));
-            btn.setTextColor(Color.WHITE);
+            btn.setTextColor(Color.BLACK);
             btn.setLayoutParams(new GridLayout.LayoutParams());
             btn.setGravity(Gravity.CENTER);
-            btn.setBackgroundColor(Color.GRAY);
+            btn.setBackgroundColor(Color.LTGRAY);
             gridLayout.addView(btn);
             numbers++;
         }
