@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
             int number = Integer.parseInt(btn.getText().toString());
             if (number % 2 == 0){
                 btn.setBackgroundColor(Color.GREEN);
+                btn.setTextColor(Color.BLACK);
             }
         }
     }
@@ -77,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
             int number = Integer.parseInt(btn.getText().toString());
             if (number % 2 != 0){
                 btn.setBackgroundColor(Color.RED);
+                btn.setTextColor(Color.BLACK);
             }
         }
     }
@@ -97,7 +99,8 @@ public class MainActivity extends AppCompatActivity {
             btn.setBackgroundColor(Color.GRAY);
             int number = Integer.parseInt(btn.getText().toString());
             if (isFibonacci(number)) {
-                btn.setBackgroundColor(Color.BLUE); // Highlight Fibonacci numbers in blue
+                btn.setBackgroundColor(Color.BLUE);
+                btn.setTextColor(Color.BLACK);
             }
         }
     }
@@ -116,7 +119,8 @@ public class MainActivity extends AppCompatActivity {
             btn.setBackgroundColor(Color.GRAY);
             int number = Integer.parseInt(btn.getText().toString());
             if (isPrime(number)) {
-                btn.setBackgroundColor(Color.MAGENTA); // Highlight prime numbers in red
+                btn.setBackgroundColor(Color.MAGENTA);
+                btn.setTextColor(Color.BLACK);
             }
         }
     }

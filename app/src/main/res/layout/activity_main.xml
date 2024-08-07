@@ -56,12 +56,13 @@
                 android:textSize="8dp"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:backgroundTint="#001484"
+                android:backgroundTint="#455EEC"
                 android:text="Fibinocci"/>
         </LinearLayout>
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:scrollbars="none">
         <GridLayout
             android:id="@+id/grid"
             android:layout_width="match_parent"
